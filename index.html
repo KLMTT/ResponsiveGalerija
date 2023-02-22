@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            padding: 10%;
+        }
+        #flex {
+            display: flex;
+            flex-direction: column;
+        }
+        #holder {
+
+            display: grid;
+            grid-template-columns: repeat(5, 18%);
+            width: 80vw;
+            justify-content: space-between;
+            align-content: space-between;
+            gap: 30px;
+        }
+
+        .box {
+            background-color: rgb(6 143 195);
+            display: grid;
+            align-items: end;
+            background-image: url(placeholder-image.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 180px;
+            border-radius: 8px;
+
+        }
+
+        .text {
+            font-size: 24px;
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(255 255 255);
+            border-radius: 0 0 8px 8px;
+
+        }
+
+        h1 {
+            color: rgba(255, 255, 255, 0.473);
+            padding: 8px;
+            font-size: 30px;
+        }
+
+        #paragraf {
+            color: rgba(255, 255, 255, 0.473);
+            padding-top: 50px;
+            font-size: 22px;
+            text-align: center;
+            display: block;
+            margin-top: 50px;
+        }
+
+
+        @media screen and (max-width: 1024px) {
+            #holder {
+                grid-template-columns: repeat(5, 18%);
+                font-size: 2.4vw;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #holder {
+                grid-template-columns: repeat(3, 30%);
+                gap: 4%;
+                font-size: 2.8vw;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            #holder {
+                grid-template-columns: 70vw;
+                gap: 2%;
+                justify-content: center;
+                font-size: 3.2vw;
+            }
+
+            h1 {
+                padding: 5%;
+            }
+            #paragraf {
+                margin-top: 120%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Gallery heading</h1>
+    </header>
+    <div id="flex">
+        <div id="holder">
+            <div class="box">
+                <div class="text">Title</div>
+            </div>
+            <div class="box">
+                <div class="text">Title</div>
+            </div>
+            <div class="box">
+                <div class="text">Title</div>
+            </div>
+            <div class="box">
+                <div class="text">Title</div>
+            </div>
+            <div class="box">
+                <div class="text">Title</div>
+            </div>
+            <div class="box">
+                <div class="text">Title</div>
+            </div>
+            <div class="box">
+                <div class="text">Title</div>
+            </div>
+            <div class="box">
+                <div class="text">Title</div>
+            </div>
+            <div class="box">
+                <div class="text">Title</div>
+            </div>
+            <div class="box">
+                <div class="text">Title</div>
+            </div>            
+        </div>
+        <div id="paragraf">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum, nibh eu rhoncus
+                efficitur, ex enim imperdiet dui,
+                ut gravida tortor neque eget dui. Sed blandit erat non urna euismod gravida. Proin sit amet purus
+                mollis
+                est tristique interdum ut a sem.
+                Nulla convallis vitae elit ac viverra. Curabitur elementum fermentum nisl. Mauris vitae ante sit
+                amet
+                mauris placerat ornare id ac sapien.
+                Nulla ut massa eu ante pharetra varius eu eget ipsum. Quisque efficitur mi vitae lectus molestie
+                mattis.
+                Quisque ut euismod ligula.
+                Vivamus augue mi, egestas nec felis nec, elementum convallis magna.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
